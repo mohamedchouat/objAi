@@ -1,0 +1,4 @@
+<key>NSCameraUsageDescription</key>
+<string>ObjAI needs camera access to scan objects.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>ObjAI needs photo library access to import images.</string>
