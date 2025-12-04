@@ -4,7 +4,7 @@
 
 | Home Screen | Details Screen |
 |-------------|----------------|
-| <img src="https://github.com/mohamedchouat/objAi/blob/main/screen/home.jpg" width="300"/> | <img src="https://github.com/mohamedchouat/objAi/blob/main/screen/details.jpg" width="300"/> |
+| <img src="https://github.com/mohamedchouat/objAi/blob/main/screen/home.jpg" width="200"/> | <img src="https://github.com/mohamedchouat/objAi/blob/main/screen/details.jpg" width="200"/> |
 
 ObjAI Scanner is a modern **Flutter application** designed to identify real-world objects using **Clarifai Vision AI**, then fetch educational facts from **Wikipedia**, and store the result locally using **Hive**.
 
