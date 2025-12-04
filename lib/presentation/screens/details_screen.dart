@@ -9,7 +9,7 @@ class DetailsScreen extends StatelessWidget {
   final ScanEntity scan;
   const DetailsScreen({super.key, required this.scan});
 
-  void _share() => Share.share('${scan.objectName}\n\n${scan.description}\n\nFrom ObjAI');
+  void _share() => SharePlus.instance.share(ShareParams(text: '${scan.objectName}\n\n${scan.description}\n\nFrom ObjAI'));
 
   Future<void> _openWikipedia() async {
     final url = Uri.parse('https://en.wikipedia.org/wiki/${Uri.encodeComponent(scan.objectName)}');
@@ -38,10 +38,10 @@ class DetailsScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(formatDate(scan.date), style: Theme.of(context).textTheme.bodySmall),
           const SizedBox(height: 12),
-          if (scan.wikiImageUrl.isNotEmpty)
+          if (scan.wikiImageUrl != null && scan.wikiImageUrl!.isNotEmpty)
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Image.network(scan.wikiImageUrl, fit: BoxFit.cover, height: 160),
+              child: Image.network(scan.wikiImageUrl!, fit: BoxFit.cover, height: 160),
             ),
           const SizedBox(height: 12),
           Text(scan.description, style: Theme.of(context).textTheme.bodyMedium),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'data/models/scan_model.dart';
-import 'presentation/providers.dart';
 import 'presentation/screens/home_screen.dart';
 import 'data/datasources/local_datasource.dart';
  

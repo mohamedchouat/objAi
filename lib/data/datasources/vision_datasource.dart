@@ -14,7 +14,6 @@ class VisionDataSource {
   final String apiKey;
   VisionDataSource(this.dio, {required this.apiKey});
 
-  /// Detects the object in the provided image file using the Clarifai API.
   Future<String> detectObject(File imageFile) async {
     final bytes = await imageFile.readAsBytes();
     final base64Image = base64Encode(bytes);
