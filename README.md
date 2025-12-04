@@ -1,5 +1,11 @@
 # 📸 ObjAI Scanner
 
+## 📷 Screenshots
+
+| Home Screen | Details Screen |
+|-------------|----------------|
+| ![Home](https://github.com/mohamedchouat/objAi/blob/main/screen/home.jpg) | ![Details](https://github.com/mohamedchouat/objAi/blob/main/screen/details.jpg) |
+
 ObjAI Scanner is a modern **Flutter application** designed to identify real-world objects using **Clarifai Vision AI**, then fetch educational facts from **Wikipedia**, and store the result locally using **Hive**.
 
 The project is built as a **Clean Architecture** example using **Riverpod** for scalable, testable state management.
